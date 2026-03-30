@@ -1,0 +1,54 @@
+{
+  "name": "llm-cli-proxy",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible HTTP proxy for Claude, Gemini and Codex CLI subscriptions",
+  "type": "module",
+  "bin": {
+    "llm-cli-proxy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "claude",
+    "gemini",
+    "codex",
+    "openai",
+    "proxy",
+    "llm",
+    "cli",
+    "subscription",
+    "anthropic",
+    "openai-compatible"
+  ],
+  "author": "Slopedrop",
+  "license": "MIT",
+  "homepage": "https://github.com/Slopedrop/llm-cli-proxy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slopedrop/llm-cli-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Slopedrop/llm-cli-proxy/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
+}
