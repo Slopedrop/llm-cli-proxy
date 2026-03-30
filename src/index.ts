@@ -23,7 +23,7 @@ const DEFAULT_PORTS: Record<string, number> = {
 const program = new Command();
 
 program
-  .name('contop-cli-proxy')
+  .name('llm-cli-proxy')
   .description(
     'Unified persistent session proxy for Claude, Gemini & Codex CLIs.\n' +
     'Exposes an OpenAI-compatible API backed by the official CLI binary.',
@@ -99,7 +99,7 @@ program
 
     console.log('');
     console.log('┌──────────────────────────────────────────────┐');
-    console.log('│          contop-cli-proxy                    │');
+    console.log('│            llm-cli-proxy                     │');
     console.log('└──────────────────────────────────────────────┘');
     console.log('');
     console.log(`  Provider:   ${provider.displayName}`);
