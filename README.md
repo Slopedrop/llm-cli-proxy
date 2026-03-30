@@ -45,15 +45,15 @@ Then point your tool at the local URL:
 ```bash
 # For tools using the Anthropic SDK
 export ANTHROPIC_BASE_URL=http://localhost:3456/v1
-export ANTHROPIC_API_KEY=sk-placeholder
 
 # For tools using the Google Gemini SDK
 export GOOGLE_GEMINI_BASE_URL=http://localhost:3457/v1
 
 # For tools using the OpenAI SDK
 export OPENAI_BASE_URL=http://localhost:3458/v1
-export OPENAI_API_KEY=sk-placeholder
 ```
+
+> Some SDKs will refuse to initialize without an API key env var set. If you hit that, set it to any non-empty string — the proxy ignores it.
 
 ### Options
 
